@@ -1,0 +1,1 @@
+{"buildTargets":["all","check","clean","distclean","install","installcheck","installcheck-parallel","installdirs","maintainer-clean","uninstall"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

@@ -5,7 +5,9 @@ sudo apt-get update && apt-get install -y sudo wget ca-certificates
 cp pgdg.list /etc/apt/sources.list.d/pgdg.list
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
 
-sudo apt-get update && LC_ALL=en_US.UTF-8 DEBIAN_FRONTEND=noninteractive  sudo apt-get install -y -q postgresql-8.3 libpq-dev
+sudo apt-get update && LC_ALL=en_US.UTF-8 DEBIAN_FRONTEND=noninteractive  sudo apt-get install -y -q libpq-dev
+
+sudo sh -c ./postgresql/INSTALL
 
 
 # /etc/ssl/private can't be accessed from within container for some reason
