@@ -1,8 +1,9 @@
 #!/bin/bash
 
 sudo apt-get update && apt-get install -y sudo wget ca-certificates
+sudo apt install gdebi-core
 sudo apt-get install -y libpq5 libpq-dev
-sudo apt-get install libssl1.0.2
+sudo gdebi libssl.deb
 
 
 sudo apt-get update && LC_ALL=en_US.UTF-8 DEBIAN_FRONTEND=noninteractive
