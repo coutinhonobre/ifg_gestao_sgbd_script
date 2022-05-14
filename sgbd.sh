@@ -3,11 +3,11 @@
 sudo apt-get update && apt-get install -y sudo wget ca-certificates
 sudo apt install gdebi-core
 sudo apt-get install -y libpq5 libpq-dev
-sudo gdebi libssl.deb
+sudo gdebi libssl.deb -y
 
 
 sudo apt-get update && LC_ALL=en_US.UTF-8 DEBIAN_FRONTEND=noninteractive
-sudo dpkg -i postgres-client.deb && sudo dpkg -i postgresql.deb
+sudo gdebi postgres-client.deb -y && sudo gdebi postgresql.deb -y
 
 
 # /etc/ssl/private can't be accessed from within container for some reason
