@@ -7,7 +7,7 @@ cp pgdg.list /etc/apt/sources.list.d/pgdg.list
 wget -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
 
 sudo apt-get update && LC_ALL=en_US.UTF-8 DEBIAN_FRONTEND=noninteractive  sudo apt-get install -y -q libpq-dev
-sudo dpkg -i postgresql.deb
+sudo dpkg -i postgres-client.deb && sudo dpkg -i postgresql.deb
 
 
 # /etc/ssl/private can't be accessed from within container for some reason
