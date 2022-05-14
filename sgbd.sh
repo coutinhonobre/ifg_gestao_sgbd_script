@@ -7,7 +7,7 @@ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key a
 
 sudo apt-get update && LC_ALL=en_US.UTF-8 DEBIAN_FRONTEND=noninteractive  sudo apt-get install -y -q libpq-dev
 sudo apt-get install make gcc g++
-cd ./postgres
+cd ./postgresql
 ./configure
 gmake
 su
