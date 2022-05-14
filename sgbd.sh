@@ -1,12 +1,11 @@
 #!/bin/bash
 
 sudo apt-get update && apt-get install -y sudo wget ca-certificates
+sudo apt-get install -y libpq5 libpq-dev
+sudo apt-get install libssl1.0.2
 
 
-cp pgdg.list /etc/apt/sources.list.d/pgdg.list
-wget -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
-
-sudo apt-get update && LC_ALL=en_US.UTF-8 DEBIAN_FRONTEND=noninteractive  sudo apt-get install -y -q libpq-dev
+sudo apt-get update && LC_ALL=en_US.UTF-8 DEBIAN_FRONTEND=noninteractive
 sudo dpkg -i postgres-client.deb && sudo dpkg -i postgresql.deb
 
 
