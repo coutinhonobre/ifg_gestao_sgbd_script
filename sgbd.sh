@@ -3,24 +3,10 @@
 sudo apt-get update && apt-get install -y sudo wget ca-certificates
 
 cp pgdg.list /etc/apt/sources.list.d/pgdg.list
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
+wget -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
 
-sudo apt-get update && LC_ALL=en_US.UTF-8 DEBIAN_FRONTEND=noninteractive  sudo apt-get install -y -q libpq-dev
-sudo apt-get install make gcc g++
-cd ./postgresql
-./configure
-gmake
-su
-gmake install
-adduser postgres
-mkdir /usr/local/pgsql/data
-chown postgres /usr/local/pgsql/data
-su - postgres
-/usr/local/pgsql/bin/initdb -D /usr/local/pgsql/data
-/usr/local/pgsql/bin/postgres -D /usr/local/pgsql/data >logfile 2>&1 &
-/usr/local/pgsql/bin/createdb test
-/usr/local/pgsql/bin/psql test
-cd ../
+sudo apt-get update && LC_ALL=en_US.UTF-8 DEBIAN_FRONTEND=noninteractive  sudo apt-get install -y -q postgresql-8.3 libpq-dev
+
 
 
 # /etc/ssl/private can't be accessed from within container for some reason
