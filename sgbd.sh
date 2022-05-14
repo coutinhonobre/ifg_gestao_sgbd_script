@@ -7,7 +7,20 @@ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key a
 
 sudo apt-get update && LC_ALL=en_US.UTF-8 DEBIAN_FRONTEND=noninteractive  sudo apt-get install -y -q libpq-dev
 
-sudo sh -c ./postgresql/INSTALL
+cd ./postgres
+./configure
+gmake
+su
+gmake install
+adduser postgres
+mkdir /usr/local/pgsql/data
+chown postgres /usr/local/pgsql/data
+su - postgres
+/usr/local/pgsql/bin/initdb -D /usr/local/pgsql/data
+/usr/local/pgsql/bin/postgres -D /usr/local/pgsql/data >logfile 2>&1 &
+/usr/local/pgsql/bin/createdb test
+/usr/local/pgsql/bin/psql test
+cd ../
 
 
 # /etc/ssl/private can't be accessed from within container for some reason
