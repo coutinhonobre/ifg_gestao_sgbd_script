@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-POSTGRESQL_USER="gestao"
-POSTGRESQL_PASS="gestao"
-POSTGRESQL_DB="gestao"
+POSTGRESQL_USER="postgres"
+POSTGRESQL_PASS="postgres"
+POSTGRESQL_DB="postgres"
 POSTGRESQL_TEMPLATE=${POSTGRESQL_TEMPLATE:-"DEFAULT"}
 
 POSTGRESQL_BIN=/usr/lib/postgresql/8.3/bin/postgres
