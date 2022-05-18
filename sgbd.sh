@@ -8,10 +8,10 @@ sudo dpkg -i libssl.deb
 
 
 sudo apt-get update && LC_ALL=en_US.UTF-8 DEBIAN_FRONTEND=noninteractive
-sudo chmod -R 0700 ./postgresql.deb
-sudi chmod -R 0700 ./postgresql-client.deb
-sudo dpkg -i ./postgresql-client.deb 
-sudo dpkg -i ./postgresql.deb
+sudo chmod -R 0700 ./postgresql.deb -y
+sudi chmod -R 0700 ./postgresql-client.deb -y
+sudo dpkg -i ./postgresql-client.deb -y
+sudo dpkg -i ./postgresql.deb -y
 
 sudo su -postgres
 psql
