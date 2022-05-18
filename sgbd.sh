@@ -13,5 +13,7 @@ sudi chmod -R 0700 ./postgresql-client.deb
 sudo dpkg -i ./postgresql-client.deb 
 sudo dpkg -i ./postgresql.deb
 
-
+sudo su -postgres
+psql
+alter user postgres with password 'postgres';
 

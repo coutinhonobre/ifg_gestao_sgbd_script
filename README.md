@@ -10,3 +10,7 @@ git clone https://github.com/coutinhonobre/ifg_gestao_sgbd_script.git
 <code>
 sudo -u postgres psql -c "SELECT version();"
 </code>
+
+## senha padrão do Sistema do postgres
+<code>user: </code> postgres </br>
+<code>password: </code> postgres </br>
