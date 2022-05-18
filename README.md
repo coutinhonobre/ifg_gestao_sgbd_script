@@ -25,7 +25,7 @@ sudo -u postgres psql -c "SELECT version();"
 
 ## Definir uma senha para o postgres
 <ul>
-    <li><code>sudo su -postgres</code</li>
+    <li><code>su -postgres</code</li>
     <li><code>psql</code</li>
     <li><code>alter user postgres with password 'postgres';</code</li>
 </ul>
