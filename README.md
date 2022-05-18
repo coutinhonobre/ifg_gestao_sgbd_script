@@ -14,7 +14,7 @@ git clone https://github.com/coutinhonobre/ifg_gestao_sgbd_script.git
 ## Install script 
 <ul>
     <li>Entrar na pasta clonada do github <code>cd ifg_gestao_sgbd_script</code></li>
-    <li>Executar script de instalação do banco <code>sudo sh ./sgbd.sh</code></li>
+    <li>Executar script de instalação do banco <code>sudo bash ./sgbd.sh</code></li>
     <li>Será necessário autorizar a instalação utilize o <code>y</code> assim que solicitado</li>
 </ul>
 
