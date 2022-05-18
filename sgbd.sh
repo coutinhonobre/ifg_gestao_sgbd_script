@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt-get --purge remove postgresql postgresql-client postgresql-client-common &&
+sudo apt-get autoremove &&
 sudo chmod -R 777 ./ &&
 sudo apt-get install -y sudo wget ca-certificates &&
 sudo dpkg -i libpq5.deb &&
