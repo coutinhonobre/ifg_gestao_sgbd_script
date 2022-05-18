@@ -30,3 +30,9 @@ sudo -u postgres psql -c "SELECT version();"
     <li><code>alter user postgres with password 'postgres';</code</li>
 </ul>
 
+## Caso aconteça um erro durante a instalação
+<ul>
+    <li><code>sudo apt --fix-broken install</code></li>
+    <li>execute novamente o <code>sudo bash ./sgbd.sh</code></li>
+</ul>
+
