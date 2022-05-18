@@ -15,7 +15,7 @@ git clone https://github.com/coutinhonobre/ifg_gestao_sgbd_script.git
     <li>Será necessário autorizar a instalação utilize o <code>y</code> assim que solicitado</li>
 </ul>
 
-## checar versão do postgres
+## checar versão do postgres 8.3
 <code>
 sudo -u postgres psql -c "SELECT version();"
 </code>
