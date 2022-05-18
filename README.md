@@ -25,9 +25,9 @@ sudo -u postgres psql -c "SELECT version();"
 
 ## Definir uma senha para o postgres
 <ul>
-    <li><code>su -postgres</code</li>
-    <li><code>psql</code</li>
-    <li><code>alter user postgres with password 'postgres';</code</li>
+    <li><code>su -postgres</code></li>
+    <li><code>psql</code></li>
+    <li><code>alter user postgres with password 'postgres';</code></li>
 </ul>
 
 ## Caso aconteça um erro durante a instalação
