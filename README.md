@@ -3,7 +3,10 @@
 ## A sequencia de passos a seguir devem ser executadas via <code>shell</code>
 
 ## Install git
-<code>sudo apt-get install git</code>
+<ul>
+    <li>install <code>sudo apt-get install git</code></li>
+    <li>check version <code>git --version</code></li>
+</ul>
 
 ## Clone repository script
 git clone https://github.com/coutinhonobre/ifg_gestao_sgbd_script.git
